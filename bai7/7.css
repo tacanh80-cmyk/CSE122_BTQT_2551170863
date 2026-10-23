@@ -1,0 +1,86 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 12px;
+}
+
+
+.khung {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px #cccccc;
+}
+
+
+.tieu-de {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    margin: 0;
+}
+
+
+.tieu-de-phu {
+    background-color: #FBE3E8;
+    color: #C8102E;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    margin: 0;
+}
+
+
+.noi-dung {
+    display: flex;
+    padding-top: 10px;
+}
+
+.cot-trai {
+    width: 50%;
+    padding: 5px 10px;
+    border-right: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+
+.cot-phai {
+    width: 50%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+
+h4 {
+    color: #C8102E;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+ul {
+    padding-left: 12px;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+
+.cot-phai img {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}

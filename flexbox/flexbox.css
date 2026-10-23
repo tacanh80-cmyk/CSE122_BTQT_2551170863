@@ -1,0 +1,42 @@
+/* Responsive CSS for Desktop (DEFAULT) */
+
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+}
+
+/* Code phần CHUNG (GIỐNG NHAU) */
+
+.container div {
+    width: 25%;
+    height: 100px;
+}
+
+.first-child {
+    background-color: antiquewhite;
+}
+
+.second-child {
+    background-color: brown;
+}
+
+.third-child {
+    background-color: rgb(16, 157, 103);
+}
+
+/* Responsive CSS for Mobile */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Responsive CSS for Tablet */
+
+
+/* Responsive CSS for Large Device */

@@ -1,0 +1,44 @@
+* {
+    margin: 15px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    position: fixed;
+    right: 45px;
+    top: 45px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.youtobe {
+    color: red;
+}
+
+.intagram {
+    color: #e1306c;
+}
+
+.tiktok {
+    color: white;
+}

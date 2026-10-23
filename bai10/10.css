@@ -1,0 +1,155 @@
+
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f6;
+    color: #333333;
+}
+
+/* Khung biểu mẫu */
+.form-lien-he {
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Phần tiêu đề */
+.tieu-de {
+    background-color: #0f766e;
+    color: #ffffff;
+    padding: 14px 18px;
+}
+
+.tieu-de h2 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.tieu-de p {
+    margin: 0;
+    font-size: 10px;
+}
+
+/* Phần thân biểu mẫu */
+.form-body {
+    padding: 16px 18px;
+}
+
+/* Mỗi hàng có hai cột */
+.hang {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+/* Nhóm nhãn và ô nhập */
+.nhom {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Nhãn phía trên ô nhập */
+.nhom label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Các ô nhập và danh sách chọn */
+.nhom input,
+.nhom select,
+.nhom textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* Ô nội dung */
+.nhom textarea {
+    resize: vertical;
+    line-height: 1.5;
+}
+
+/* Khoảng cách cho phần nội dung */
+.noi-dung {
+    margin-bottom: 12px;
+}
+
+/* Phần checkbox */
+.dong-y {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    font-size: 10px;
+    color: #334155;
+}
+
+.dong-y input {
+    width: 13px;
+    height: 13px;
+    accent-color: #0f766e;
+}
+
+.dong-y label {
+    max-width: 120px;
+}
+
+/* Phần hai nút */
+.nut {
+    display: flex;
+    gap: 7px;
+}
+
+.nut button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f766e;
+    color: #ffffff;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Nút nhập lại */
+.nut .nut-nhap-lai {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+/* Hiệu ứng khi di chuột */
+.nut button:hover {
+    opacity: 0.85;
+}
+
+/* Giao diện trên điện thoại */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .hang {
+        flex-direction: column;
+    }
+
+    .dong-y {
+        justify-content: flex-start;
+    }
+}

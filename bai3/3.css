@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+.khung{
+    width: 420px;
+    margin: 30px auto;
+    padding: 16px 22px;
+    background: -moz-linear-gradient(to bottom,#7ec8e3,#0a5c8a);
+    border-radius: 8px;
+
+}
+.khung h1{
+    color: #0b3d5c;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 10px 0;
+
+}
+.mo-dau{
+    background-color: #0b3d5c;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.anh{
+    width: 140px;
+    height: 100px;
+    float right ;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+.khung p{
+    color: #000000;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 8px 0;
+
+}
+.khung p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0b3c5d;
+    float: left;
+    line-height: 25px;
+    margin-right: 3px;
+
+}
+.khung::after{
+    content: "";
+    display: block;
+    clear: both;
+}

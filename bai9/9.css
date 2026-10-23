@@ -1,0 +1,150 @@
+
+/* Định dạng chung cho toàn bộ trang */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f6;
+    color: #333333;
+}
+
+/* Khung hồ sơ chính */
+.ho-so {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Cột trái */
+.cot-trai {
+    width: 32%;
+    padding: 18px 12px;
+    background: linear-gradient(135deg, #1565c0, #0d3f7a);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Ảnh đại diện hình tròn */
+.anh-dai-dien {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #1565c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Họ tên */
+.cot-trai h2 {
+    margin: 8px 0 3px;
+    font-size: 14px;
+}
+
+/* Chức danh */
+.chuc-danh {
+    margin: 0 0 12px;
+    font-size: 9px;
+}
+
+/* Danh sách thông tin liên hệ */
+.thong-tin {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 9px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* Liên kết trong cột trái */
+.thong-tin a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Cột phải */
+.cot-phai {
+    width: 68%;
+    padding: 12px 18px;
+}
+
+/* Từng mục nội dung */
+.muc {
+    margin-bottom: 10px;
+}
+
+/* Tiêu đề có đường gạch chân */
+.muc h3 {
+    margin: 4px 0 6px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #dce6f2;
+    color: #1565c0;
+    font-size: 10px;
+}
+
+/* Đoạn văn bản */
+.muc p {
+    margin: 0;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+/* Danh sách kỹ năng */
+.danh-sach-ky-nang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Từng nhãn kỹ năng */
+.danh-sach-ky-nang span {
+    padding: 4px 9px;
+    border-radius: 20px;
+    background-color: #e3f0ff;
+    color: #0d3f7a;
+    font-size: 8px;
+}
+
+/* Các liên kết */
+.lien-ket {
+    font-size: 9px;
+}
+
+.lien-ket a {
+    color: #1565c0;
+}
+
+/* Hiển thị phù hợp trên màn hình nhỏ */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .ho-so {
+        flex-direction: column;
+    }
+
+    .cot-trai,
+    .cot-phai {
+        width: 100%;
+    }
+
+    .thong-tin {
+        text-align: center;
+    }
+}

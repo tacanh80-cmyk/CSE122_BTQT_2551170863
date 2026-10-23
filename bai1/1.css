@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+.ten-bai {
+    color: #D40000;
+    border-bottom: 3px solid #D40000;
+    padding-bottom: 8px;
+    margin: 0 42px 32px 42px;
+    font-size: 24px;
+}
+
+
+.khung-tho {
+    width: 75%;
+    margin: 0 auto;
+    padding: 18px 20px;
+    
+    background-color: #FFFDE7;
+    border: 1px solid #9E9E9E;
+    
+    text-align: center;
+}
+
+
+.khung-tho h2 {
+    color: #D40000;
+    background-color: #FFD9E6;
+    
+    font-weight: bold;
+    text-align: center;
+    
+    padding: 5px;
+    margin: 0 0 18px 0;
+}
+
+/* Các khổ thơ */
+.kho {
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Khổ 1 và khổ 3 màu xanh */
+.kho-1,
+.kho-3 {
+    color: #0033CC;
+}
+
+/* Khổ 2 màu đỏ */
+.kho-2 {
+    color: #D40000;
+}
+
+/* Khoảng cách các dòng thơ */
+.kho p {
+    margin: 5px 0;
+}
+
+/* Đường kẻ ngang giữa các khổ */
+hr {
+    width: 55%;
+    border: none;
+    border-top: 1px solid #0033CC;
+    margin: 14px auto;
+}

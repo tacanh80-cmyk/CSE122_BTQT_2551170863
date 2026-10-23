@@ -1,0 +1,88 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 462px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    background-color: #f2f2f2;
+}
+
+/* Khung đồng hồ màu đen */
+.dong-ho {
+    width: 100%;
+    height: 150px;
+    padding: 20px 25px;
+    background-color: #000000;
+    border-radius: 13px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+/* Ảnh chữ số */
+.dong-ho img {
+    width: 32px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Dấu hai chấm */
+.dong-ho img.dau-hai-cham {
+    width: 16px;
+}
+
+/* Khung lời chào */
+.khung-loi-chao {
+    margin: 42px 29px 0;
+    padding: 16px 5px;
+    background-color: #ffffff;
+    border-radius: 13px 13px 0 0;
+    text-align: center;
+}
+
+/* Chữ lời chào */
+.khung-loi-chao h1 {
+    margin: 0;
+    color: #c62828;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+/* Điều chỉnh khi màn hình nhỏ */
+@media (max-width: 480px) {
+    .dong-ho {
+        padding: 20px 12px;
+        gap: 2px;
+    }
+
+    .dong-ho img {
+        width: 25px;
+        height: 34px;
+    }
+
+    .dong-ho img.dau-hai-cham {
+        width: 12px;
+    }
+
+    .khung-loi-chao {
+        margin: 30px 15px 0;
+    }
+
+    .khung-loi-chao h1 {
+        font-size: 30px;
+    }
+}

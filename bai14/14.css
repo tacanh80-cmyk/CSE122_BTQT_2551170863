@@ -1,0 +1,110 @@
+
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Khung chính */
+.container {
+    width: 100%;
+    max-width: 484px;
+    margin: 0 auto;
+}
+
+/* Tiêu đề đầu trang */
+.dau-trang {
+    background-color: #2e7d32;
+    text-align: center;
+    padding: 9px;
+}
+
+.dau-trang h1 {
+    margin: 0;
+    color: #ffefb3;
+    font-size: 13px;
+}
+
+/* Đoạn giới thiệu */
+.gioi-thieu {
+    margin: 0;
+    padding: 14px 12px;
+    font-size: 8px;
+    font-style: italic;
+    line-height: 1.6;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Lưới chứa 6 kỳ quan */
+.danh-sach {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+    padding: 16px 12px 9px;
+}
+
+/* Từng thẻ kỳ quan */
+.ky-quan {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* Ảnh minh họa */
+.ky-quan img {
+    width: 100%;
+    height: 72px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Phần chữ trong thẻ */
+.noi-dung {
+    padding: 7px;
+}
+
+/* Tiêu đề từng kỳ quan */
+.noi-dung h3 {
+    margin: 0 0 5px;
+    color: #1b5e20;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+/* Mô tả kỳ quan */
+.noi-dung p {
+    margin: 0;
+    font-size: 7px;
+    line-height: 1.5;
+}
+
+/* Tạo hiệu ứng so le nhẹ cho các thẻ chẵn */
+.ky-quan:nth-child(even) {
+    transform: translateY(2px);
+}
+
+/* Dải màu cuối trang */
+.chan-trang {
+    height: 14px;
+    background-color: #f1f4f1;
+    margin-top: 0;
+}
+
+/* Giao diện trên màn hình nhỏ */
+@media (max-width: 400px) {
+    .danh-sach {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ky-quan img {
+        height: 90px;
+    }
+}
